@@ -11,4 +11,7 @@ while chance > 0:
         chance = chance - 1
         print('Password verification failed.')
         print('Your access is denie')
-        print('You have ', chance, ' chance/s left')
+        if chance > 0:
+            print('You have ', chance, ' chance/s left')
+        else:
+            print('your have no more chances, your acc is locked')
